@@ -112,8 +112,12 @@ article > section > p {
   font-size: 18px;
 }
 
-p {
+p, address {
   line-height: 1.5em;
+}
+
+mark {
+  background-color: rgb(139, 249, 139);
 }
 
 section > aside {
