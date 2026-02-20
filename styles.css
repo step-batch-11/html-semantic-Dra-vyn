@@ -11,20 +11,9 @@ body{
   background-color: hsl(240, 10%, 94%);
 }
 
-/* body > header {
-  position: sticky;
-  top: 0px;
-} */
-
 body > header,
 body > footer {
   background-color: #2f5d3a;
-  text-align: center;
-}
-
-article > header, 
-article > footer {
-  background-color: hsl(137, 89%, 65%);
   text-align: center;
 }
 
@@ -41,16 +30,6 @@ body > header > p {
   padding-top: 5px;
   font-size: 20px;
   color: hsl(168, 87%, 52%);
-}
-
-article > header > h2 {
-  font-size: 28px;
-  color: rgb(54, 51, 51);
-}
-
-article > header > p {
-  font-style: italic;
-  color: hsl(180, 1%, 36%);
 }
 
 nav > ul {
@@ -77,13 +56,43 @@ nav a:hover {
 }
 
 main {
-  margin: 0em 20em;
+  margin: 0em 15em;
   background-color: white;
   display: flex;
+  padding-right: 2em;
+}
+
+
+article {
+  width: 80%;
+  padding: 2em;
+}
+
+article > header > p {
+  line-height: 25px;
+}
+
+article > header, 
+article > footer {
+  background-color: hsl(137, 89%, 65%);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+article > header > h2 {
+  font-size: 28px;
+  padding-bottom: 10px;
+  color: rgb(54, 51, 51);
+}
+
+article > header > p {
+  font-style: italic;
+  color: hsl(180, 1%, 36%);
 }
 
 article > section {
   border-bottom: 2px solid rgb(176, 173, 173, 0.5);
+  padding-bottom: 22px;
   margin-top: 2em ;
 }
 
@@ -97,8 +106,7 @@ article > section > p {
 }
 
 section > aside {
-  margin-top: 2em;
-  height: 30%;
+  height: 100%;
   padding: 2.5em 1em;
   display: flex;
   flex-direction: column;
@@ -126,6 +134,11 @@ section > aside > p:hover {
   cursor: pointer;
 }
 
+data {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 figure {
   margin-top: 0.5em;
   width: 100%;
@@ -140,35 +153,6 @@ img {
   border-radius: 5px;
 }
 
-data {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-article {
-  padding: 2em;
-}
-
-article > header {
-  padding-bottom: 20px;
-}
-
-article > header > p {
-  line-height: 25px;
-}
-
-article > section {
-  padding: 20px 5px;
-}
-
-article > section > details:hover {
-  cursor: pointer;
-}
-
-section {
-  margin-bottom: 2em;
-}
-
 figcaption {
   font-size: 1.1em;
   text-align: center;
@@ -181,6 +165,10 @@ details {
   padding: 10px;
   margin-top: 2;
   background-color: beige;
+}
+
+article > section > details:hover {
+  cursor: pointer;
 }
 
 footer {
