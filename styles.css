@@ -13,7 +13,9 @@ body{
 
 body > header,
 body > footer {
-  background-color: #2f5d3a;
+  /* background-color: #2f5d3a; */
+  background-image: url(https://zipgrow.com/wp-content/uploads/2023/05/chuttersnap-IfmqOuOkaOA-unsplash-1024x684.jpg);
+  background-size: cover;
   text-align: center;
 }
 
@@ -23,13 +25,15 @@ header{
 
 body > header > h1 {
   color: white;
-  font-weight: 100;
+  font-weight: 600;
+  text-shadow: 2px 1px 1px grey;
 }
 
 body > header > p {
   padding-top: 5px;
   font-size: 20px;
-  color: hsl(168, 87%, 52%);
+  text-shadow: 1px 1px 1px grey;
+  color: hsl(168, 69%, 82%);
 }
 
 nav > ul {
@@ -37,14 +41,17 @@ nav > ul {
   margin-top: 2em;
   display: flex;
   justify-content: center;
-  gap: 3em;
+  gap: 5em;
   padding: 1em 0em;
 }
 
 nav a {
   text-decoration: none;
-  color: hsl(165, 94%, 52%);
-  padding: 3px;
+  background-color: rgb(51, 50, 50);
+  border-radius: 5px;
+  color: hsl(168, 69%, 82%);
+  /* color: hsl(165, 94%, 52%); */
+  padding: 7px;
 }
 
 nav a:hover {
@@ -74,7 +81,7 @@ article > header > p {
 
 article > header, 
 article > footer {
-  background-color: hsl(137, 89%, 65%);
+  background-image: linear-gradient(45deg, rgb(30, 177, 30), rgb(97, 205, 97));
   text-align: center;
   padding-bottom: 20px;
 }
@@ -82,12 +89,12 @@ article > footer {
 article > header > h2 {
   font-size: 28px;
   padding-bottom: 10px;
-  color: rgb(54, 51, 51);
+  color: rgb(247, 245, 245);
 }
 
 article > header > p {
   font-style: italic;
-  color: hsl(180, 1%, 36%);
+  color: hsl(180, 84%, 93%);
 }
 
 article > section {
@@ -103,6 +110,10 @@ article > section > h3 {
 article > section > p {
   padding-top: 15px;
   font-size: 18px;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 section > aside {
@@ -134,8 +145,13 @@ section > aside > p:hover {
   cursor: pointer;
 }
 
-data {
-  font-size: 16px;
+strong {
+  font-size: 20px;
+  color: #4d4d4e;
+}
+
+data, time {
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -149,6 +165,7 @@ figure {
 }
 
 img {
+  margin-top: 1em;
   width: 80%;
   border-radius: 5px;
 }
@@ -156,7 +173,7 @@ img {
 figcaption {
   font-size: 1.1em;
   text-align: center;
-  margin: 1em 0em;
+  margin: 0.5em 0em 2em 0em;
   color: rgb(84, 80, 80);
 }
 
@@ -187,6 +204,7 @@ footer > p {
 
 body > footer > p {
   color: rgb(245, 246, 247);
+  text-shadow: 1px 1px 2px grey;
 }
 
 dialog {
