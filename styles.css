@@ -2,23 +2,55 @@
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 body{
   width: 100vw;
   height: 100vh;
-  background-color: beige;
+  background-color: hsl(240, 10%, 94%);
+}
+
+/* body > header {
+  position: sticky;
+  top: 0px;
+} */
+
+body > header,
+body > footer {
+  background-color: #2f5d3a;
+  text-align: center;
+}
+
+article > header, 
+article > footer {
+  background-color: hsl(137, 89%, 65%);
+  text-align: center;
 }
 
 header{
-  text-align: center;
-  padding: 1em;
-  background-color: rgb(137, 252, 137);
+  padding-top: 1em;
 }
 
-header p {
+body > header > h1 {
+  color: white;
+  font-weight: 100;
+}
+
+body > header > p {
+  padding-top: 5px;
+  font-size: 20px;
+  color: hsl(168, 87%, 52%);
+}
+
+article > header > h2 {
+  font-size: 28px;
+  color: rgb(54, 51, 51);
+}
+
+article > header > p {
   font-style: italic;
-  color: rgb(84, 68, 68);
+  color: hsl(180, 1%, 36%);
 }
 
 nav > ul {
@@ -27,31 +59,131 @@ nav > ul {
   display: flex;
   justify-content: center;
   gap: 3em;
+  padding: 1em 0em;
 }
 
 nav a {
   text-decoration: none;
-  color: rgb(89, 91, 91);
+  color: hsl(165, 94%, 52%);
+  padding: 3px;
+}
+
+nav a:hover {
+  border-radius: 5px;
+  color: hsl(201, 86%, 14%);
+  background-color: hsl(148, 70%, 62%);
+  box-shadow: 1px 1px 2px 2px hsl(0, 30%, 44%);
+  cursor: pointer;
 }
 
 main {
-  margin: 3em 25em;
+  margin: 0em 20em;
+  background-color: white;
+  display: flex;
+}
+
+article > section {
+  border-bottom: 2px solid rgb(176, 173, 173, 0.5);
+  margin-top: 2em ;
+}
+
+article > section > h3 {
+  font-size: 24px;
+}
+
+article > section > p {
+  padding-top: 15px;
+  font-size: 18px;
+}
+
+section > aside {
+  margin-top: 2em;
+  height: 30%;
+  padding: 2.5em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  background-color: rgb(245, 251, 250);
+}
+
+section > aside > p {
+  background-color: hsl(180, 67%, 87%);
+  border-left: 3px solid hsl(0, 0%, 50%);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+section > aside > h4 {
+  font-size: 20px;
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 5px;
+}
+
+section > aside > p:hover {
+  color: white;
+  background-color: rgb(139, 150, 159);
+  box-shadow: 2px 2px 2px 1px hsl(163, 87%, 57%);
+  cursor: pointer;
+}
+
+figure {
+  margin-top: 0.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 80%;
+  border-radius: 5px;
+}
+
+data {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 article {
-  background-color: white;
   padding: 2em;
-  border-radius: 10px;
-  box-shadow: 1px 1px 2px 2px grey;
+}
+
+article > header {
+  padding-bottom: 20px;
+}
+
+article > header > p {
+  line-height: 25px;
+}
+
+article > section {
+  padding: 20px 5px;
+}
+
+article > section > details:hover {
+  cursor: pointer;
 }
 
 section {
   margin-bottom: 2em;
 }
 
+figcaption {
+  font-size: 1.1em;
+  text-align: center;
+  margin: 1em 0em;
+  color: rgb(84, 80, 80);
+}
+
+details {
+  border-left: 2px solid grey;
+  padding: 10px;
+  margin-top: 2;
+  background-color: beige;
+}
+
 footer {
-  background-color: rgb(158, 156, 156);
-  color: rgb(56, 54, 53);
   text-align: center;
   padding: 20px;
 }
@@ -61,6 +193,26 @@ footer a {
 }
 
 footer > p {
-  color: darkviolet;
+  color: hsl(247, 74%, 29%);
   padding-bottom: 10px;
+}
+
+body > footer > p {
+  color: rgb(245, 246, 247);
+}
+
+dialog {
+  color: white;
+  background-color: rgb(198, 42, 11);
+  border: none;
+  padding: 10px;
+  box-shadow: 1px 1px 2px 2px grey;
+  border-radius: 5px;
+  translate: 45em -6em;
+  display: none;
+}
+
+body > footer:hover > dialog{
+  display: block;
+  cursor: pointer;
 }
